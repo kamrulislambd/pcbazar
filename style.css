@@ -419,7 +419,7 @@ html {
     line-height: 1.8;
   }
   .home__heading {
-    font-size: 3.6rem;
+    font-size: 3.3rem;
     line-height: 1.5;
     padding: 1.5rem 0;
   }
@@ -445,12 +445,12 @@ html {
     padding: 1rem;
   }
   .blog__title {
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     line-height: 1.8;
     padding: 1.8rem 0;
   }
   .blog__desc {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     line-height: 1.6;
   }
   .blog__btn {
@@ -476,7 +476,7 @@ html {
     height: 28rem;
   }
   .products__desc {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     line-height: 1.8;
   }
   .products__price {
