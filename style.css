@@ -48,18 +48,18 @@ html {
   color: #fff;
 }
 
-.header__navitem {
+.header__navbar a {
   display: inline-block;
   color: #fff;
   font-size: 1.9rem;
   margin-left: 2rem;
 }
 
-.header__navitem:hover {
+.header__navbar a:hover {
   color: #EAB543;
 }
 
-.header #menubtn {
+.header #menu-btn {
   color: #fff;
   font-size: 2rem;
   cursor: pointer;
@@ -380,30 +380,27 @@ html {
 }
 
 
-@media (max-width: 768px) {
-  .header #menubtn {
-    display: initial;
-  }
-  .header #menubtn.fa-times{
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  .header__navbar {
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    background-color: #2C3A47;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  .header__navbar.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-  }
-  .header__navitem {
-    display: block;
-    font-size: 2rem;
-    margin: 2.5rem 2rem;
-  }
+@media only screen and (max-width: 768px) {
+  .header #menu-btn{
+		display: initial;
+	}
+	.header #menu-btn.fa-times{
+		transform: rotate(180deg);
+	}
+	.header .header__navbar{
+		position: absolute;
+		top: 99%;
+		left: 0; right: 0;
+		background: #2C3A47;
+		clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+	}
+	.header .header__navbar.active{
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+	}
+	.header .header__navbar a{
+		display: block;
+		margin: 2.3rem 2rem;
+	}
 
   .home {
     padding: 15rem 9% 7rem;
