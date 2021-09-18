@@ -363,8 +363,21 @@ html {
 
 
 /* Media Query */
+@media only screen and (min-width: 1200px){
+	.home__heading{
+    	font-size: 6rem;
+  }
+	.blog__title{
+    font-size: 4.3rem;
+  }
+}
+	
 
+<<<<<<< HEAD
 @media only screen and (min-width: 991px) {
+=======
+@media only screen and (min-width: 991px) and (max-width:1200px {
+>>>>>>> 127d9b2c2030170bd9a243535198316764b97228
   html {
     font-size: 55%;
   }
