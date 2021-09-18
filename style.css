@@ -373,11 +373,7 @@ html {
 }
 	
 
-<<<<<<< HEAD
-@media only screen and (min-width: 991px) {
-=======
-@media only screen and (min-width: 991px) and (max-width:1200px {
->>>>>>> 127d9b2c2030170bd9a243535198316764b97228
+@media only screen and (min-width: 991px) and (max-width:1200px) {
   html {
     font-size: 55%;
   }
