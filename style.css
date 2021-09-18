@@ -363,8 +363,17 @@ html {
 
 
 /* Media Query */
+@media only screen and (min-width: 1200px){
+	.home__heading{
+    	font-size: 6rem;
+  }
+	.blog__title{
+    font-size: 4.3rem;
+  }
+}
+	
 
-@media screen and (min-width: 991px) {
+@media only screen and (min-width: 991px) and (max-width:1200px {
   html {
     font-size: 55%;
   }
