@@ -364,7 +364,7 @@ html {
 
 /* Media Query */
 
-@media screen and (max-width: 991px) {
+@media only screen and (min-width: 991px) {
   html {
     font-size: 55%;
   }
