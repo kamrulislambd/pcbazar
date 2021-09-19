@@ -254,7 +254,7 @@ html {
 
 .products__single img {
   width: 100%;
-  height: 25rem;
+  min-height: 25rem;
 }
 
 .products__single:hover {
@@ -374,7 +374,7 @@ html {
   margin-left: 3rem;
 }
   .home{
-    padding: 12rem 9% 5rem;
+    padding: 15rem 9% 5rem;
     gap: 1.5rem;
   }
   .home__heading{
@@ -388,7 +388,7 @@ html {
     padding: 2.2rem;
   }
   .home__banner img {
-    height: 90rem;
+    height: 95rem;
 }
   .blog__title{
     font-size: 4rem;
@@ -401,18 +401,51 @@ html {
     font-size: 55%;
   }
   .header {
-    padding: 2rem;
+    padding: 1rem 9%;
   }
-  .home__heading{
-    font-size: 4.5rem;
+  .header .header__navbar a{
+    font-size: 2.3rem;
   }
-  .blog__title{
-    font-size: 4rem;
-  }
+  .home{
+    padding: 20rem 9% 5rem;
+    gap: 1.5rem;
+    }
+    .home__banner img {
+        height: 45rem;
+    }
+    .home__heading {
+        font-size: 4.3rem;
+    }
+    .blog{
+    padding: 1rem 9%;
+    gap: 1.5rem;
+    }
+    .blog__content {
+        padding: 10rem 1rem;
+    }
+    .blog__title {
+        font-size: 3.5rem;
+    }
+    .blog__desc {
+        font-size: 1.7rem;
+    }
+    .blog__feature-image {
+        padding-top: 12rem;
+    }
+    .products__single {
+        flex: 1 1 48%;
+    }
+    .products__single img {
+        height: 27rem;
+    }
 }
 
 
 @media only screen and (max-width: 767px){
+  
+  .header {
+    padding: 1rem 9%;
+}
   .header #menu-btn{
 		display: initial;
 	}
@@ -433,189 +466,83 @@ html {
 		display: block;
 		margin: 2.3rem 2rem;
 	}
-
-  .home {
-    padding: 15rem 9% 7rem;
-    gap: 1.5rem;
-  }
-  .home__hero {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .home__subtitle {
-    font-size: 2rem;
-    line-height: 1.8;
-  }
-  .home__heading {
-    font-size: 2.5rem;
-    line-height: 1.5;
-    padding: 1.5rem 0;
-  }
-  .home__desc {
-    font-size: 1.8rem;
-    line-height: 1.8;
-  }
-  .home__banner {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .home__banner img {
-    height: 45rem;
-  }
-  .blog {
-    gap: 1.5rem;
-  }
-  .blog__content {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding: 1rem;
-  }
-  .blog__title {
-    font-size: 2rem;
-    line-height: 1.8;
-    padding: 1.8rem 0;
-  }
-  .blog__desc {
-    font-size: 1.7rem;
-    line-height: 1.6;
-  }
-  .blog__btn {
-    padding: 1.5rem 2rem;
-    font-size: 2.2rem;
-    padding: 1.3rem 2.5rem;
-  }
-  .blog__feature-image {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    padding-top: 5rem;
-  }
-  .products__title {
-    font-size: 5rem;
-  }
-  .products__single {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 48%;
-            flex: 1 1 48%;
+  .products__single{
+    flex-basis: 100%;
   }
   .products__single img {
-    height: 28rem;
+      max-height: 45rem;
   }
-  .products__desc {
-    font-size: 1.5rem;
-    line-height: 1.8;
-  }
-  .products__price {
-    font-size: 2.5rem;
-  }
-  .products__btn {
-    font-size: 1.9rem;
-    padding: 1.2rem 2.5rem;
-  }
-  .footer {
-    padding: 5rem 9%;
-  }
-  .footer__content {
-    gap: 2rem;
-  }
-  .footer__address {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .footer__location {
-    font-size: 1.8rem;
-    line-height: 1.8;
-  }
-  .footer__map {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-  }
-  .footer__map iframe {
-    min-height: 20rem;
-  }
-  .footer__copyright {
-    letter-spacing: 2px;
-  }
+
 }
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+@media only screen and (min-width: 400px) and (max-width: 767px) {
   html {
     font-size: 50%;
   }
-  .home {
-    gap: 7rem;
-  }
-  .home__hero {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .home__heading{
-    font-size: 5rem;
-  }
-  .home__banner {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .blog__content {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    padding: 3rem 2rem;
-  }
-  .blog__title{
+  .header {
+    padding: 1rem 9%;
+}
+.header #menu-btn {
     font-size: 3.5rem;
-    line-height: 1.9;
-  }
-  .blog__desc{
-    font-size: 2.2rem;
-    line-height: 1.8;
-  }
-  .blog__btn{
+}
+.header .header__navbar a {
+    display: block;
+    margin: 3.5rem 9%;
     font-size: 2.5rem;
-  }
-  .products {
-    padding: 5rem 9%;
-  }
-  .products__title {
-    font-size: 4.2rem;
-    line-height: 1.6;
-    padding: 4rem 0;
-  }
-  .products__single {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .products__single img {
-    height: 35rem;
-  }
-  .products__desc {
+}
+.home {
+    padding: 20rem 9% 1rem;
+}
+.home__subtitle {
+    font-size: 4rem;
+}
+.home__heading {
+    font-size: 7rem;
+    line-height: 1.2;
+    padding: 2.5rem 0;
+}
+.home__desc {
     font-size: 2.2rem;
-  }
-  .products__price {
-    font-size: 2.7rem;
-  }
-  .products__btn {
+}
+.home__btn {
+    font-size: 2.5rem;
+    margin-top: 3rem;
+}
+.home__banner img {
+    height: 60rem;
+}
+.blog__content {
+    padding: 0;
+}
+.blog__title {
+    font-size: 4rem;
+}
+.blog__btn {
+    font-size: 3rem;
+    padding: 1.5rem 3.5rem;
+}
+.blog__btn:hover {
+    padding: 1.5rem 5rem;
+}
+.products__title {
+    font-size: 4.5rem;
+}
+.products__single{
+  flex-basis: 100%;
+}
+.products__single img {
+    max-height: 45rem;
+}
+
+.products__desc {
+    font-size: 2.5rem;
+}
+.products__price {
+    font-size: 3.5rem;
+}
+.footer__copyright {
     font-size: 2rem;
-    padding: 1.3rem 2.5rem;
-    margin: 2rem 0;
-  }
-  .footer {
-    padding: 5rem 9%;
-  }
-  .footer__content {
-    gap: 5rem;
-  }
-  .footer__address {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .footer__map {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
+}
 }
 
 
