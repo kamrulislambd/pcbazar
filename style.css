@@ -38,10 +38,8 @@ html {
   z-index: 1000;
 }
 
-.header__logo {
-  color: #fff;
-  font-size: 3rem;
-  text-transform: uppercase;
+.header__logo img {
+  max-width: 210px;
 }
 
 .header__navbar {
@@ -78,7 +76,7 @@ html {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 15rem 9% 6rem;
+  padding: 15rem 9% 5rem;
   gap: 3rem;
   background-color: #25CCF7;
 }
@@ -135,7 +133,7 @@ html {
 }
 
 .home__banner img {
-  height: 80rem;
+  height: 95rem;
   width: 100%;
 }
 
@@ -369,11 +367,29 @@ html {
     font-size: 55%;
   }
   .header {
-    padding: 2rem;
+    padding: 1rem 9%;
+}
+.header__navbar a {
+  font-size: 2.5rem;
+  margin-left: 3rem;
+}
+  .home{
+    padding: 12rem 9% 5rem;
+    gap: 1.5rem;
   }
   .home__heading{
-    font-size: 4.5rem;
+    font-size: 6rem;
   }
+  .home__desc{
+    font-size: 2.5rem;
+  }
+  .home__btn{
+    font-size: 2.4rem;
+    padding: 2.2rem;
+  }
+  .home__banner img {
+    height: 90rem;
+}
   .blog__title{
     font-size: 4rem;
   }
@@ -526,7 +542,7 @@ html {
     letter-spacing: 2px;
   }
 }
-@media (max-width: 450px) {
+@media only screen and (min-width: 480px) and (max-width: 767px) {
   html {
     font-size: 50%;
   }
